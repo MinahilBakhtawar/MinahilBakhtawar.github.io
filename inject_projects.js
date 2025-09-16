@@ -41,7 +41,6 @@ function showProjects(count = 1) {
 
   projectsShown += count;
 
-  // Hide Load More button if all projects are shown
   if (projectsShown >= projects.length) {
     document.getElementById("load-more").style.display = "none";
   }
