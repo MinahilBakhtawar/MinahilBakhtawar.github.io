@@ -368,93 +368,30 @@ implement findings from machine learning experiments into accessible features us
 
 
 
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
+<!-- Fourth Section: Projects -->
+<section id="projects" class="section">
+  <h3 class="page-title white-text" style="color:#ff69b4;">Projects</h3> <!-- optional pink title -->
+  
+  <div class="container">
+    <!-- Row where project cards will be injected -->
+    <div class="row" id="recent-projects">
+      <!-- JavaScript will inject project cards here -->
+    </div>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music journalling app" src="/assets/img/music_journal.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Journaling App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A well being app based on journaling and self reflection with AI
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, RestAPI, streamlit</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Sync your spotify playlist.</li>
-                  <li>Get lyric based prompts to help you journal.</li>
-                  <li>Scroll through previous journal entries.</li>
+    <!-- Load More button -->
+    <div style="text-align:center; margin-top:20px;">
+      <button id="load-more" class="btn waves-effect waves-light">Load More</button>
+    </div>
+  </div>
+</section>
+
+<!-- Include project data first -->
+<script src="projects.js"></script>
+
+<!-- Include the dynamic injection logic -->
+<script src="inject_projects.js"></script>
 
 
-                </ul>
-                <div class="card-action">
-        
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/MinahilBakhtawar/lyric-postcards"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
-          <!-- Video Summarizer -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="/assets/img/autonomous_driving.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Lane Segmentation Model<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An exploratory approach to better lane segmentation in autonomous driving.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Combined ResNet with a UNet backbone to improve lane segmentation.</li>
-                  <li>Evaluated the model on Cityscapes dataset.
-                    </li>
-
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/MinahilBakhtawar/resunet-lane-segmentation"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-         
-
-        
-          <!-- ************* -->
-        </div>
-      </div>
-    </section>
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
