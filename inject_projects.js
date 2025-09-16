@@ -31,7 +31,7 @@ function createProjectCard(project) {
   return col;
 }
 
-// Function to show projects dynamically
+
 function showProjects(count = 1) {
   const container = document.getElementById("recent-projects");
 
